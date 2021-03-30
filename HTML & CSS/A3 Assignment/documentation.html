@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="documentation.css">
+
+    </head>
+
+    <body>    
+
+<nav id="navbar">
+    <header>Python Documentation</header>
+    <ul>
+      <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+      <li><a href="#Alternate_Implementations" class="nav-link">Alternate Implementations</a></li>
+      <li><a href="#Notation" class="nav-link">Notation</a></li>
+      <li><a href="#Lexical_Analysis" class="nav-link">Lexical Analysis</a></li>
+      <li><a href="#Comments" class="nav-link">Comments</a></li>
+      <li><a href="#Reference" class="nav-link">Reference</a></li>
+    </ul>
+  </nav>
+  
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <article>
+        <p>
+          Python is an easy to learn, powerful programming language. It has efficient high-level
+          data structures and a simple but effective approach to object-oriented programming.
+          Python’s elegant syntax and dynamic typing, together with its interpreted nature, make
+          it an ideal language for scripting and rapid application development in many areas on
+          most platforms.
+        </p>
+        <p>
+          The Python interpreter is easily extended with new functions and data types implemented in
+          C or C++ (or other languages callable from C). Python is also suitable as an extension
+          language for customizable applications.
+        </p>
+        <p>
+          Every Python implementation comes with a number of built-in and standard modules. These
+          are documented in The Python Standard Library.
+          A few built-in modules are mentioned when they interact in a significant way with the 
+          language definition.
+        </p>
+      </article>
+    </section>
+    
+    <section id="Alternate_Implementations" class="main-section">
+      <header>Alternate Implementations</header>
+      <article>
+        <p>Known implementations include:</p>
+        <ul>
+          <li>
+            <strong>CPython</strong> This is the original and most-maintained implementation of Python, 
+            written in C. New language features generally appear here first.
+          </li>
+          <li>
+            <strong>Jython</strong> Python implemented in Java. This implementation can be used as a 
+            scripting language for Java applications, or can be used to create applications using the 
+            Java class libraries. It is also often used to create tests for Java libraries. More information 
+            can be found at the Jython website.
+          </li>
+          <li>
+            <strong>Python for .NET</strong> This implementation actually uses the CPython implementation, 
+            but is a managed .NET application and makes .NET libraries available. It was created by Brian 
+            Lloyd. For more information, see the Python for .NET home page.
+          </li>
+          <li>
+            <strong>IronPython</strong> An alternate Python for .NET. Unlike Python.NET, this is a complete 
+            Python implementation that generates IL, and compiles Python code directly to .NET assemblies. 
+            It was created by Jim Hugunin, the original creator of Jython. For more information, see 
+            the IronPython website.
+          </li>
+          <li>
+            <strong>PyPy</strong> An implementation of Python written completely in Python. It supports 
+            several advanced features not found in other implementations like stackless support and a 
+            Just in Time compiler. One of the goals of the project is to encourage experimentation with 
+            the language itself by making it easier to modify the interpreter (since it is written in Python). 
+            Additional information is available on the PyPy project’s home page.
+          </li>
+        </ul>
+        <p>
+          Each of these implementations varies in some way from the language as documented in this manual, 
+          or introduces specific information beyond what’s covered in the standard Python documentation. 
+          Please refer to the implementation-specific documentation to determine what else you need to 
+          know about the specific implementation you’re using.
+        </p>
+      </article>
+    </section>
+    
+    <section id="Notation" class="main-section">
+      <header>Notation</header>
+      <article>
+        <p>
+          The descriptions of lexical analysis and syntax use a modified BNF grammar notation. This uses 
+          the following style of definition:
+        </p>
+        <code>
+          <pre>
+          
+      name      ::=  lc_letter (lc_letter | "_")*
+      lc_letter ::=  "a"..."z"
+          </pre>
+        </code>
+        <p>
+          The first line says that a <code>name</code> is an <code>lc_letter</code> followed by a sequence of zero
+          or more <code>lc_letter</code>s and underscores. An <code>lc_letter</code> in turn is any of the single
+          characters <code>'a'</code> through <code>'z'</code>. (This rule is actually adhered to for the names 
+          defined in lexical and grammar rules in this document.)
+        </p>
+        <p>
+          Each rule begins with a name (which is the name defined by the rule) and <code>::=</code>. A vertical
+          bar (<code>|</code>) is used to separate alternatives; it is the least binding operator in this notation. 
+          A star (<code>*</code>) means zero or more repetitions of the preceding item; likewise, a plus (<code>+</code>) 
+          means one or more repetitions, and a phrase enclosed in square brackets (<code>[ ]</code>) means zero or 
+          one occurrences (in other words, the enclosed phrase is optional). The <code>*</code> and <code>+</code> 
+          operators bind as tightly as possible; parentheses are used for grouping. Literal strings are enclosed in quotes.
+          White space is only meaningful to separate tokens. Rules are normally contained on a single line; rules with many
+          alternatives may be formatted alternatively with each line after the first beginning with a vertical bar.
+        </p>
+        <p>
+          In lexical definitions (as the example above), two more conventions are used: Two literal characters separated
+          by three dots mean a choice of any single character in the given (inclusive) range of ASCII characters. A phrase
+          between angular brackets (<code>&lsaquo;...&rsaquo;</code>) gives an informal description of the symbol
+          defined; e.g., this could be used to describe the notion of ‘control character’ if needed.
+        </p>
+        <p>
+          Even though the notation used is almost the same, there is a big difference between the meaning of lexical and
+          syntactic definitions: a lexical definition operates on the individual characters of the input source,
+          while a syntax definition operates on the stream of tokens generated by the lexical analysis.
+        </p>
+      </article>
+    </section>
+    
+    <section id="Lexical_Analysis" class="main-section">
+      <header>Lexical Analysis</header>
+      <article>
+        <p>
+          Python reads program text as Unicode code points; the encoding of a source file can be given by an
+          encoding declaration and defaults to UTF-8, see PEP 3120 for details. If the source file cannot be decoded, a SyntaxError
+          is raised.
+        </p>
+      </article>
+    </section>
+    
+    <section id="Comments" class="main-section">
+      <header>Comments</header>
+      <article>
+        <p> 
+          A comment starts with a hash character (<code>#</code>) that is not part of a string literal, and ends
+          at the end of the physical line. A comment signifies the end of the logical line unless the implicit 
+          line joining rules are invoked. Comments are ignored by the syntax.
+        </p>
+      </article>
+    </section>
+    
+    <section id="Reference" class="main-section">
+      <header>Reference</header>
+      <article>
+        <p>
+          All the documentation in this page is taken from <a href="https://docs.python.org/3/">Python 3.9.0 documentation</a>.
+        </p>
+      </article>
+    </section> 
+  </main>
+</body>
+  </html>

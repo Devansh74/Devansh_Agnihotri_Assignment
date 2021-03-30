@@ -1,0 +1,15 @@
+body{
+    background-color: aquamarine;
+}
+
+.first{
+    text-transform: uppercase;
+}
+
+.second{
+    text-transform: lowercase;
+}
+
+.third{
+    text-transform: capitalize;
+}

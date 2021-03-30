@@ -1,0 +1,167 @@
+header{
+    font-family:"Gill Sans", sans-serif;
+    font-size:medium;
+    text-align: center;
+    background-color: #11137c;
+    color: white;
+   border-radius: 6px;
+   height: 3rem;
+}
+h1{
+    padding-top: 6px;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color:#0957a0ef;   
+}
+
+.container{
+    width: 50%;
+    height: fit-content;
+    background-color: #b5e4ff;
+    padding: 20px 20px 5px 20px;
+    margin-left: 23%;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+fieldset{
+    border-radius: 5px;
+}
+
+#name{
+    width: 30rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    font-family: cursive;
+    background-color:none;
+    
+    
+}
+#email{
+    width: 30rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    font-family: cursive;
+}
+#address{
+    width: 30rem;
+    height: 5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    font-family: cursive;
+}
+#password{
+    width: 30rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    font-family: cursive;
+}
+#tel{
+    width: 30rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    font-family: cursive;
+    background-color:none;
+}
+#card{
+    width: 30rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    font-family: cursive;
+    background-color:none;
+}
+#card_number{ 
+    width: 30rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    font-family: cursive;
+    background-color:none;
+}
+#holdername{
+    width: 30rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    font-family: cursive;
+
+}
+#date{
+    
+    width: 10rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    font-family: cursive;
+    background-color:none;
+}
+hr{
+    margin-top: 30px;
+}
+#cvv{
+    width: 5rem;
+    height: 1.5rem;
+    border-radius:  6px;
+    border:1px solid #ccc;
+}
+
+#submit{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: #4ab7e2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s,border-radius 0.15s;
+    text-decoration: none;
+    font-family: cursive;
+    
+    
+
+}
+#reset{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: #4ab7e2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: background-color 0.15s,border-radius 0.15s;
+    text-decoration: none;
+    font-family: cursive;
+}
+#submit:hover{
+    background-color:#040355 ;
+    color: white;
+}
+#reset:hover{
+    background-color:#040355 ;
+    color: white;
+}
+#male{
+    cursor: pointer;
+}
+#female{
+    cursor: pointer;
+}

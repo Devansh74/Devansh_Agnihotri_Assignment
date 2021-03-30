@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Form Page</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+   <header> <h1>Joining Form</h1>
+   </header>
+   <div class="container">
+   <form>
+        <div class="box"><h4>Name*:</h4>
+        <input type="text" name="name" id="name" placeholder="Your name" required></div>
+        <br>
+        <div class="box"><fieldset id="gender">
+        <legend>Gender</legend> Male <input type="radio" name="Gender" id="male" required> Female<input type="radio" name="Gender" id="female" required></fieldset></div>
+        <div class="box"><h4>Email*:</h4><input type="email" name="email" id="email" placeholder="name@email.com" required></div>
+        <div class="box"><h4>Address:</h4><textarea placeholder="Enter your address..." name="address" id="address" rows="6" cols="30"></textarea></div>
+        <div class="box"><h4>Password:</h4><input type="password" placeholder="Create Password" name="password" id="password"></div>
+        <div class="box"><h4>Phone number*:</h4><input type="tel" name="number" id="tel" maxlength="10"  minlength="10"  placeholder="Your Phone Number"required></div>
+        <hr>
+        <h2 id="card-info">Card Information</h2>
+        <div class="box"><h4>Card type*:</h4>
+        <select id="card">
+            <option value="">--Select Card Type--</option>
+            <option value="Visa">Visa</option>
+            <option value="Master card">Master Card</option>
+            <option value="Rupay">Rupay</option>
+        </select></div>
+       <div class="box"><h4>Card Number*:</h4><input type="tel" name="card_number" id="card_number" maxlength="16" minlength="16" placeholder="xxxx-xxxx-xxxx-xxxx"  required></div>
+       <div class="box"><h4>Name*:</h4><input type="text" name="name" id="holdername" placeholder="Card Holder's Name"required></div>
+       <div class="box"><h4>Expiry Date*:</h4><input type="month" name="date" id="date" min="2021-01" max="2040-01" required></div>
+       <div class="box"><h4>CVV*:</h4><input type="password" name="cvv" id="cvv" maxlength="3" minlength="3" required></div>
+    <br>
+       <div class="box"><input type="submit" value="submit" id="submit"><input type="reset" value="reset" id="reset"></div>
+    
+        </form>
+    </div>
+</body>
+</html>
